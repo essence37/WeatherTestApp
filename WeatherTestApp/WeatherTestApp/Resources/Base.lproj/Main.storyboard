@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vX5-u2-rqb">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="WeatherTestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Whp-kV-VFp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="550.72463768115949" y="118.52678571428571"/>
+        </scene>
+        <!--Search Results Controller-->
+        <scene sceneID="D4W-1t-iCl">
+            <objects>
+                <viewController storyboardIdentifier="SearchResultsController" id="yTh-2Z-iIZ" customClass="SearchResultsController" customModule="WeatherTestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QBn-ym-meC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="CSp-gi-wA5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q9I-jD-EZk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1394" y="119"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="Qt1-Im-7D9">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" id="sNi-0p-kwW" customClass="DetailViewController" customModule="WeatherTestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wJl-5g-a7f">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="KNX-Be-ICG">
+                                <rect key="frame" x="20" y="185" width="104.5" height="105"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="90"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Погода в городе" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6lY-lz-XZm">
+                                <rect key="frame" x="20" y="84" width="374" height="41"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пасмурно" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HuB-DU-WoK">
+                                <rect key="frame" x="144.5" y="195" width="81.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ощущается как +2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Gh-UP-kPw">
+                                <rect key="frame" x="144.5" y="259.5" width="148.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Влажность" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bcc-wv-P5u">
+                                <rect key="frame" x="144.5" y="227.5" width="87" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HBQ-Z8-2l8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6lY-lz-XZm" firstAttribute="top" secondItem="HBQ-Z8-2l8" secondAttribute="top" constant="40" id="5fI-vH-86Y"/>
+                            <constraint firstItem="Bcc-wv-P5u" firstAttribute="leading" secondItem="KNX-Be-ICG" secondAttribute="trailing" constant="20" id="6QS-74-HxV"/>
+                            <constraint firstItem="HBQ-Z8-2l8" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="HuB-DU-WoK" secondAttribute="trailing" constant="10" id="Q1V-r2-svH"/>
+                            <constraint firstItem="KNX-Be-ICG" firstAttribute="bottom" secondItem="1Gh-UP-kPw" secondAttribute="bottom" constant="10" id="W0v-uT-S3A"/>
+                            <constraint firstItem="HuB-DU-WoK" firstAttribute="leading" secondItem="KNX-Be-ICG" secondAttribute="trailing" constant="20" id="W7m-LD-1aD"/>
+                            <constraint firstItem="HBQ-Z8-2l8" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="1Gh-UP-kPw" secondAttribute="trailing" constant="10" id="cHj-65-PRm"/>
+                            <constraint firstItem="1Gh-UP-kPw" firstAttribute="leading" secondItem="KNX-Be-ICG" secondAttribute="trailing" constant="20" id="dFR-qP-0z6"/>
+                            <constraint firstItem="KNX-Be-ICG" firstAttribute="leading" secondItem="HBQ-Z8-2l8" secondAttribute="leading" constant="20" id="e6m-Oq-8tq"/>
+                            <constraint firstItem="Bcc-wv-P5u" firstAttribute="centerY" secondItem="KNX-Be-ICG" secondAttribute="centerY" id="gPz-lU-BXS"/>
+                            <constraint firstItem="HBQ-Z8-2l8" firstAttribute="trailing" secondItem="6lY-lz-XZm" secondAttribute="trailing" constant="20" id="juh-un-qNg"/>
+                            <constraint firstItem="HuB-DU-WoK" firstAttribute="top" secondItem="KNX-Be-ICG" secondAttribute="top" constant="10" id="kj4-px-GnM"/>
+                            <constraint firstItem="HBQ-Z8-2l8" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Bcc-wv-P5u" secondAttribute="trailing" constant="10" id="l6i-mk-B0s"/>
+                            <constraint firstItem="KNX-Be-ICG" firstAttribute="top" secondItem="6lY-lz-XZm" secondAttribute="bottom" constant="60" id="rXv-D8-gWd"/>
+                            <constraint firstItem="6lY-lz-XZm" firstAttribute="leading" secondItem="HBQ-Z8-2l8" secondAttribute="leading" constant="20" id="vrI-Ca-s9T"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cityNameLabel" destination="6lY-lz-XZm" id="yOi-ON-5pr"/>
+                        <outlet property="conditionLabel" destination="HuB-DU-WoK" id="GHR-n0-1ON"/>
+                        <outlet property="feelsLikeLabel" destination="1Gh-UP-kPw" id="7B1-2b-hOJ"/>
+                        <outlet property="humidityLabel" destination="Bcc-wv-P5u" id="GT8-q4-LPm"/>
+                        <outlet property="temperatureLabel" destination="KNX-Be-ICG" id="Rw6-Lt-WAv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a9d-ih-K3Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2291" y="119"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lrX-bP-4y5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vX5-u2-rqb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="W9w-u5-EYy">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="YcA-xh-GE8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Udi-PK-lSO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-359.4202898550725" y="118.52678571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
