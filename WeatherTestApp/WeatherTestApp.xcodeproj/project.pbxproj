@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		F4307A1125E94B9200C99B23 /* SearchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4307A1025E94B9200C99B23 /* SearchResultsController.swift */; };
 		F4307A1525E964C500C99B23 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4307A1425E964C500C99B23 /* DetailViewController.swift */; };
+		F453F87925F2903600299D25 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F453F87825F2903600299D25 /* UIView+Extensions.swift */; };
+		F453F87E25F2B2ED00299D25 /* SearchResultsController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F453F87D25F2B2ED00299D25 /* SearchResultsController+DataSource.swift */; };
+		F453F88125F2B3CF00299D25 /* MainViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F453F88025F2B3CF00299D25 /* MainViewController+DataSource.swift */; };
 		F485464C25E8005300F460AB /* TimeOfDayShort.swift in Sources */ = {isa = PBXBuildFile; fileRef = F485464B25E8005300F460AB /* TimeOfDayShort.swift */; };
 		F485464F25E8011F00F460AB /* Hours.swift in Sources */ = {isa = PBXBuildFile; fileRef = F485464E25E8011F00F460AB /* Hours.swift */; };
 		F485465225E805CC00F460AB /* GeoObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F485465125E805CC00F460AB /* GeoObject.swift */; };
@@ -16,10 +19,10 @@
 		F485465825E806E700F460AB /* Yesterday.swift in Sources */ = {isa = PBXBuildFile; fileRef = F485465725E806E700F460AB /* Yesterday.swift */; };
 		F485465B25E8089600F460AB /* AccumPrec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F485465A25E8089600F460AB /* AccumPrec.swift */; };
 		F485465E25E80AED00F460AB /* Biomet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F485465D25E80AED00F460AB /* Biomet.swift */; };
+		F493FC1325F1650700F68BB4 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F493FC1225F1650700F68BB4 /* DetailView.swift */; };
 		F4E3F3FF25E6B73700C4BEA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E3F3FE25E6B73700C4BEA1 /* AppDelegate.swift */; };
 		F4E3F40125E6B73700C4BEA1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E3F40025E6B73700C4BEA1 /* SceneDelegate.swift */; };
 		F4E3F40325E6B73700C4BEA1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E3F40225E6B73700C4BEA1 /* MainViewController.swift */; };
-		F4E3F40625E6B73700C4BEA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4E3F40425E6B73700C4BEA1 /* Main.storyboard */; };
 		F4E3F40825E6B73800C4BEA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4E3F40725E6B73800C4BEA1 /* Assets.xcassets */; };
 		F4E3F40B25E6B73800C4BEA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4E3F40925E6B73800C4BEA1 /* LaunchScreen.storyboard */; };
 		F4E3F41A25E6B77C00C4BEA1 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E3F41925E6B77C00C4BEA1 /* APIClient.swift */; };
@@ -37,6 +40,9 @@
 /* Begin PBXFileReference section */
 		F4307A1025E94B9200C99B23 /* SearchResultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsController.swift; sourceTree = "<group>"; };
 		F4307A1425E964C500C99B23 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		F453F87825F2903600299D25 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		F453F87D25F2B2ED00299D25 /* SearchResultsController+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchResultsController+DataSource.swift"; sourceTree = "<group>"; };
+		F453F88025F2B3CF00299D25 /* MainViewController+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+DataSource.swift"; sourceTree = "<group>"; };
 		F485464B25E8005300F460AB /* TimeOfDayShort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeOfDayShort.swift; sourceTree = "<group>"; };
 		F485464E25E8011F00F460AB /* Hours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hours.swift; sourceTree = "<group>"; };
 		F485465125E805CC00F460AB /* GeoObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoObject.swift; sourceTree = "<group>"; };
@@ -44,11 +50,11 @@
 		F485465725E806E700F460AB /* Yesterday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yesterday.swift; sourceTree = "<group>"; };
 		F485465A25E8089600F460AB /* AccumPrec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccumPrec.swift; sourceTree = "<group>"; };
 		F485465D25E80AED00F460AB /* Biomet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Biomet.swift; sourceTree = "<group>"; };
+		F493FC1225F1650700F68BB4 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		F4E3F3FB25E6B73700C4BEA1 /* WeatherTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4E3F3FE25E6B73700C4BEA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4E3F40025E6B73700C4BEA1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F4E3F40225E6B73700C4BEA1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		F4E3F40525E6B73700C4BEA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4E3F40725E6B73800C4BEA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4E3F40A25E6B73800C4BEA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4E3F40C25E6B73800C4BEA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -82,6 +88,7 @@
 				F4E3F40025E6B73700C4BEA1 /* SceneDelegate.swift */,
 				F4E3F41425E6B75C00C4BEA1 /* Model */,
 				F43977FF25EA3217009AC49C /* Controllers */,
+				F493FC1125F164D600F68BB4 /* View */,
 				F439780125EA3276009AC49C /* BusinessLogic */,
 			);
 			path = App;
@@ -91,7 +98,9 @@
 			isa = PBXGroup;
 			children = (
 				F4E3F40225E6B73700C4BEA1 /* MainViewController.swift */,
+				F453F88025F2B3CF00299D25 /* MainViewController+DataSource.swift */,
 				F4307A1025E94B9200C99B23 /* SearchResultsController.swift */,
+				F453F87D25F2B2ED00299D25 /* SearchResultsController+DataSource.swift */,
 				F4307A1425E964C500C99B23 /* DetailViewController.swift */,
 			);
 			path = Controllers;
@@ -108,7 +117,6 @@
 		F439780225EA3290009AC49C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				F4E3F40425E6B73700C4BEA1 /* Main.storyboard */,
 				F4E3F40725E6B73800C4BEA1 /* Assets.xcassets */,
 				F4E3F40925E6B73800C4BEA1 /* LaunchScreen.storyboard */,
 			);
@@ -121,6 +129,14 @@
 				F4E3F40C25E6B73800C4BEA1 /* Info.plist */,
 			);
 			path = Environments;
+			sourceTree = "<group>";
+		};
+		F453F87725F2901B00299D25 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F453F87825F2903600299D25 /* UIView+Extensions.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 		F485467425E826FC00F460AB /* Info */ = {
@@ -174,6 +190,14 @@
 			path = Yesterday/GeoObject/Forecasts/Fact;
 			sourceTree = "<group>";
 		};
+		F493FC1125F164D600F68BB4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F493FC1225F1650700F68BB4 /* DetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		F4E3F3F225E6B73700C4BEA1 = {
 			isa = PBXGroup;
 			children = (
@@ -194,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				F43977FE25EA3210009AC49C /* App */,
+				F453F87725F2901B00299D25 /* Core */,
 				F439780225EA3290009AC49C /* Resources */,
 				F439780325EA3296009AC49C /* Environments */,
 			);
@@ -282,7 +307,6 @@
 			files = (
 				F4E3F40B25E6B73800C4BEA1 /* LaunchScreen.storyboard in Resources */,
 				F4E3F40825E6B73800C4BEA1 /* Assets.xcassets in Resources */,
-				F4E3F40625E6B73700C4BEA1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,16 +317,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F453F87E25F2B2ED00299D25 /* SearchResultsController+DataSource.swift in Sources */,
 				F4E3F42425E6BE9300C4BEA1 /* Weather.swift in Sources */,
 				F4E3F40325E6B73700C4BEA1 /* MainViewController.swift in Sources */,
 				F4E3F42725E6BFCE00C4BEA1 /* Info.swift in Sources */,
 				F485465525E8064700F460AB /* GeoObjectSub.swift in Sources */,
 				F4E3F43825E6D0ED00C4BEA1 /* TimeOfDay.swift in Sources */,
 				F4E3F41D25E6B78800C4BEA1 /* Method.swift in Sources */,
+				F453F87925F2903600299D25 /* UIView+Extensions.swift in Sources */,
 				F4E3F43525E6D04100C4BEA1 /* Parts.swift in Sources */,
 				F4E3F43025E6C51600C4BEA1 /* TZInfo.swift in Sources */,
 				F485464F25E8011F00F460AB /* Hours.swift in Sources */,
 				F485464C25E8005300F460AB /* TimeOfDayShort.swift in Sources */,
+				F453F88125F2B3CF00299D25 /* MainViewController+DataSource.swift in Sources */,
 				F4307A1125E94B9200C99B23 /* SearchResultsController.swift in Sources */,
 				F4307A1525E964C500C99B23 /* DetailViewController.swift in Sources */,
 				F4E3F3FF25E6B73700C4BEA1 /* AppDelegate.swift in Sources */,
@@ -310,6 +337,7 @@
 				F4E3F42A25E6BFDA00C4BEA1 /* Fact.swift in Sources */,
 				F485465225E805CC00F460AB /* GeoObject.swift in Sources */,
 				F485465B25E8089600F460AB /* AccumPrec.swift in Sources */,
+				F493FC1325F1650700F68BB4 /* DetailView.swift in Sources */,
 				F4E3F40125E6B73700C4BEA1 /* SceneDelegate.swift in Sources */,
 				F4E3F42025E6B9A600C4BEA1 /* City.swift in Sources */,
 				F485465825E806E700F460AB /* Yesterday.swift in Sources */,
@@ -321,14 +349,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F4E3F40425E6B73700C4BEA1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F4E3F40525E6B73700C4BEA1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F4E3F40925E6B73800C4BEA1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
