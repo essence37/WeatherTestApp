@@ -16,7 +16,7 @@ struct Fact: Codable, Hashable {
     let soilTemp: Int?
     let uvIndex: Int?
     let temp: Int
-    let feelsLike: Int?
+    let feels_like: Int?
     let windSpeed: Double?
     let windGust: Double?
     let windDir: String?
@@ -39,7 +39,7 @@ struct Fact: Codable, Hashable {
     
     enum CodingKeyes: String, CodingKey {
         case temp
-        case feelsLike = "feels_like"
+        case feels_like
         case tempWater = "temp_water"
         case icon
         case condition

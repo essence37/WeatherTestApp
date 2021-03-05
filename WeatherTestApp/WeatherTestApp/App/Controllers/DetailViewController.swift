@@ -9,28 +9,30 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
-    @IBOutlet weak var cityNameLabel: UILabel!
-    @IBOutlet weak var temperatureLabel: UILabel!
-    @IBOutlet weak var conditionLabel: UILabel!
-    @IBOutlet weak var feelsLikeLabel: UILabel!
-    @IBOutlet weak var humidityLabel: UILabel!
+    lazy var detailView: DetailView = {
+        let view = DetailView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
     
     var weather: Weather?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.view.backgroundColor = .white
+        self.view.addSubview(detailView)
+        detailView.setupConstraints(self.view)
         configureLabels()
     }
     
-    func configureLabels() {
-        guard let weather = weather else { return }
-        cityNameLabel.text = "Погода в городе \(weather.geo_object.locality.name)"
+    func configureLabels() {guard let weather = weather else { return }
+        detailView.cityNameLabel.text = "Погода в городе \(weather.geo_object.locality.name)"
         let temperature = weather.fact.temp
-        temperatureLabel.text = temperature > 0 ? "+\(temperature)°C" : "\(temperature)°C"
-        conditionLabel.text = "\(weather.fact.condition)"
-        humidityLabel.text = "Влажность: \(weather.fact.humidity)%"
-        guard let feelsLike = weather.fact.feelsLike else { return }
-        feelsLikeLabel.text = feelsLike > 0 ? "Ощущается как +\(temperature)°C" : "Ощущается как \(temperature)°C"
+        detailView.temperatureLabel.text = temperature > 0 ? "+\(temperature)°C" : "\(temperature)°C"
+        detailView.conditionLabel.text = "\(weather.fact.condition)"
+        detailView.humidityLabel.text = "Влажность: \(weather.fact.humidity)%"
+        guard let feelsLike = weather.fact.feels_like else { return }
+        detailView.feelsLikeLabel.text = feelsLike > 0 ? "Ощущается как +\(temperature)°C" : "Ощущается как \(temperature)°C"
     }
 }
